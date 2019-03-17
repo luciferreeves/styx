@@ -1,0 +1,32 @@
+{
+  "name": "bexplorer",
+  "version": "0.1.0",
+  "description": "A Simple File Manager",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "keywords": [
+    "File",
+    "manager",
+    "explorer",
+    "bexplorer",
+    "finder",
+    "dolphin",
+    "files",
+    "commander",
+    "mc",
+    "nautilus",
+    "pantheon"
+  ],
+  "author": "BackSlash Linux",
+  "license": "MIT",
+  "dependencies": {
+    "bluebird": "^3.5.3",
+    "electron": "^4.1.0",
+    "is-directory": "^0.3.1",
+    "jquery": "^3.3.1",
+    "node-cmd": "^3.0.0",
+    "path-type": "^4.0.0"
+  }
+}

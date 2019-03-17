@@ -1,0 +1,117 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.top-bar {
+    max-width: 100%;
+    padding: 20px;
+    background-color: #303030;
+}
+.button-grp {
+    display: inline-block;
+    margin-right: 30px;
+}
+.button-grp button {
+    border: 1px #DBDBDB solid;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #F8F8F8;
+    outline: none;
+    color: #575757;
+    margin-right: 0px;
+    padding: 5px 10px;
+}
+.button-grp button:disabled,
+button[disabled]{
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
+}
+.active-btn {
+    background-color: #6C6C6C !important;
+    border: 1px #6C6C6C solid !important;
+    color: white !important;
+}
+.main-window {
+    display: grid;
+    grid-template-columns: 200px auto;
+    width: 100%;
+    height: calc(100vh - 70px);
+}
+.sidebar {
+    background-color: #555555;
+    height: 100%;
+}
+.sidebar_title {
+    color: #f3f3f3;
+    text-transform: uppercase;
+    padding: 20px 0px 0px 20px;
+    margin-top: 0px;
+    font-size: 11px;
+    font-weight: 900;
+    -webkit-user-select: none;
+}
+.sidebar_links {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    -webkit-user-select: none;
+}
+.sidebar_links li {
+    color: #f3f3f3;
+    text-transform: capitalize;
+    padding: 5px 0px 5px 20px;
+    margin-top: 0px;
+    font-size: 12px;
+    font-weight: 500;
+    -webkit-user-select: none;
+}
+.active_link {
+    background-color: #252525;
+}
+.window {
+    padding: 20px;
+    height: calc(100vh - 110px);
+    overflow: scroll;
+}
+.single-item {
+    display: inline-block;
+    text-align: center;
+    width: 96px;
+}
+.folder {
+    font-size: 48px;
+    line-height: 1px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    width: 72px;
+}
+.folder_desc {
+    text-align: center;
+    font-size: 14px;
+    width: 72px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    -webkit-user-select: none;
+}
+.blue {
+    color: #6CCCF6;
+}
+.file {
+    color: #D8D8D8;
+}
+.red {
+    color: red
+}
+.listview {
+    display: grid;
+    grid-template-columns: 50px auto;
+    border-bottom: solid 1px lightgray;
+}
+.folder_desclist {
+    padding: 15px 0px 0px 20px;
+    font-size: 18px;
+    -webkit-user-select: none;
+}
