@@ -1,4 +1,4 @@
-# BExplorer File Manager
+# Styx File Manager
 
 A File Manager built on Electron. Supports macOS & Linux
 
