@@ -1,6 +1,12 @@
 # Styx File Manager
 
-A File Manager built on Electron. Supports macOS & Linux
+Cross-Platform File Manager
+
+````
+REWRITING THIS ENTIRE PROJECT FROM SCRATCH... STAY TUNED!
+````
+
+<!-- A File Manager built on Electron. Supports macOS & Linux
 
 
 
@@ -28,6 +34,6 @@ Start app
 npm start
 ```
 
-make changes, push to github. 
+make changes, push to github.  -->
 
 
