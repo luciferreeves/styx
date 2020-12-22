@@ -102,3 +102,6 @@ dist
 
 # TernJS port file
 .tern-port
+
+# Compiled TypeScript files
+ts_compiled/
