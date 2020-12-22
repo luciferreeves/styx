@@ -24,6 +24,7 @@ export default class windowCreator {
                 preload: path.join(__dirname, 'preload.js'),
                 nodeIntegration: true
             },
+            titleBarStyle: 'hiddenInset'
         });
         windowCreator.mainWindow
             .loadURL('file://' + __dirname + '/../app.html');
