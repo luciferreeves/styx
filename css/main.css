@@ -108,6 +108,22 @@ body {
   padding: 10px;
 }
 
+.sidebar .sidebarTitle {
+  color: #3d3d3d;
+  font-weight: 700;
+  font-size: 12px;
+}
+
+.sidebar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.sidebar ul li {
+  font-size: 14px;
+}
+
 .actionButtons .newFolder {
   background-image: url("../icons/symbolic/light/normal/folder-new.svg");
 }
