@@ -3,7 +3,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
 .topNavigationBar {
@@ -35,9 +35,9 @@ body {
 }
 
 .two_pane {
-    display: grid;
-    grid-template-columns: 240px auto;
-    padding: 10px;
+  display: grid;
+  grid-template-columns: 240px auto;
+  padding: 10px;
 }
 
 .sidebar {
@@ -50,8 +50,19 @@ body {
     list-style: none;
     margin: 0;
     padding: 0;
+    cursor: default;
+    -webkit-user-select: none;
+    .selected {
+      color: #3f84e5;
+    }
     li {
       font-size: 14px;
+      cursor: default;
+      -webkit-user-select: none;
+      i {
+        margin-right: 8px;
+        font-size: 16px;
+      }
     }
   }
 }
