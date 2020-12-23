@@ -1,6 +1,12 @@
-// This file is required by the app.html file and will
-// be executed in the renderer process for that window.
-// No Node.js APIs are available in this process unless
-// nodeIntegration is set to true in webPreferences.
-// Use preload.js to selectively enable features
-// needed in the renderer process.
+import systemLevelInformation from './systemLevelInformation';
+
+// Listing Files in Home Directory
+
+const currentHomeDir: string = systemLevelInformation.getUserInfo().homedir;
+document.getElementById('username').innerHTML = systemLevelInformation.getUserInfo().username;
+
+// This variable will keep track of current path
+var currentDirectoryPath: string = currentHomeDir;
+
+const currentHomeFolders: any = systemLevelInformation.getAllFilesOfDirectory(currentHomeDir);
+
