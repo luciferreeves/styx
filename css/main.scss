@@ -8,7 +8,7 @@ body {
 
 .topNavigationBar {
   padding: 5px 10px;
-  -webkit-user-select: none;
+  user-select: none;
   -webkit-app-region: drag;
   background: #ffffff;
 }
@@ -41,6 +41,7 @@ body {
 }
 
 .sidebar {
+  user-select: none;
   .sidebarTitle {
     color: rgb(61, 61, 61);
     font-weight: 700;
@@ -49,16 +50,15 @@ body {
   ul {
     list-style: none;
     margin: 0;
-    padding: 0;
+    padding: 0px;
     cursor: default;
-    -webkit-user-select: none;
     .selected {
       color: #3f84e5;
     }
     li {
       font-size: 14px;
       cursor: default;
-      -webkit-user-select: none;
+      padding: 10px;
       i {
         margin-right: 8px;
         font-size: 16px;

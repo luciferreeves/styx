@@ -5,10 +5,11 @@ import { extname, basename } from 'path';
 
 class systemLevelInformation {
 
-    getUserInfo(): { username: string, homedir: string } {
+    getUserInfo(): { username: string, homedir: string, platform: string } {
         return {
             username: os.userInfo().username,
-            homedir: os.userInfo().homedir
+            homedir: os.userInfo().homedir,
+            platform: os.platform()
         };
     }
 

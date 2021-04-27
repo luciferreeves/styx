@@ -1,12 +1,28 @@
 import systemLevelInformation from './systemLevelInformation';
+import Preferences from './Preferences';
 
-// Listing Files in Home Directory
+// List all the favourites
 
-const currentHomeDir: string = systemLevelInformation.getUserInfo().homedir;
-document.getElementById('username').innerHTML = systemLevelInformation.getUserInfo().username;
+Preferences.getFavourites().forEach(favourite => {
+    const favourites = document.getElementById('favourites');
+    const listElement = document.createElement('li');
+    const iconElement = document.createElement('i');
+    iconElement.classList.add(favourite.icon);
+    listElement.appendChild(iconElement);
+    const spanElement = document.createElement('span');
+    spanElement.innerHTML = favourite.text;
+    listElement.appendChild(spanElement);
+    listElement.setAttribute('path', favourite.path);
+    if (Preferences.getConfiguredPathToDisplayAfterAppInit() === favourite.path) {
+        listElement.classList.add('selected');
+        displayDirectoryViaElement(listElement);
+    }
+    favourites.appendChild(listElement);
+});
 
-// This variable will keep track of current path
-var currentDirectoryPath: string = currentHomeDir;
-
-const currentHomeFolders: any = systemLevelInformation.getAllFilesOfDirectory(currentHomeDir);
+function displayDirectoryViaElement(element: HTMLElement) {
+    // Listing Files in the Directory
+    const currentFolders: any = systemLevelInformation.getAllFilesOfDirectory(element.getAttribute('path'));
+    console.log(currentFolders);
+}
 

@@ -77,6 +77,9 @@ body {
 .topNavigationBar {
   padding: 5px 10px;
   -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   -webkit-app-region: drag;
   background: #ffffff;
 }
@@ -108,6 +111,13 @@ body {
   padding: 10px;
 }
 
+.sidebar {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
 .sidebar .sidebarTitle {
   color: #3d3d3d;
   font-weight: 700;
@@ -117,9 +127,8 @@ body {
 .sidebar ul {
   list-style: none;
   margin: 0;
-  padding: 0;
+  padding: 0px;
   cursor: default;
-  -webkit-user-select: none;
 }
 
 .sidebar ul .selected {
@@ -129,7 +138,7 @@ body {
 .sidebar ul li {
   font-size: 14px;
   cursor: default;
-  -webkit-user-select: none;
+  padding: 10px;
 }
 
 .sidebar ul li i {
